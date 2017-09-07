@@ -1,0 +1,15 @@
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\FHIRTest.exe.config
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.csprojResolveAssemblyReference.cache
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.Form1.resources
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.Properties.Resources.resources
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.csproj.GenerateResource.Cache
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\FHIRTest.exe
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\FHIRTest.pdb
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\Hl7.Fhir.DSTU2.Core.dll
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\Hl7.Fhir.Support.dll
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\Hl7.FhirPath.dll
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\Newtonsoft.Json.dll
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\System.ValueTuple.dll
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\bin\Debug\Newtonsoft.Json.xml
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.exe
+c:\users\patrick\documents\visual studio 2015\Projects\FHIRTest\FHIRTest\obj\Debug\FHIRTest.pdb
