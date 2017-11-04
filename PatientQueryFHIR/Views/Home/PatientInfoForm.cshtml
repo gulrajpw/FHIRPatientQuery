@@ -1,5 +1,7 @@
 ﻿
 @{
+
+
     ViewBag.Title = "PatientInfoForm";
 }
 
@@ -20,9 +22,18 @@
             <input type="submit" value="Click to submit"/>
             <hr />
         </form>
-        <p> @ViewBag.patientQuery</p>
+        
+     
+   
     </body>
 
 
 </html>
 
+@{
+    foreach (var person in ViewBag.ReturnedResults)
+    {
+        <li>@person</li>
+    }
+
+}

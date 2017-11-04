@@ -90,3 +90,12 @@ C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\System.W
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.csprojResolveAssemblyReference.cache
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.dll
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.pdb
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.DSTU2.Core.dll
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Support.dll
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.FhirPath.dll
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Newtonsoft.Json.dll
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\System.ValueTuple.dll
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.DSTU2.Core.xml
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Support.xml
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.FhirPath.xml
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Newtonsoft.Json.xml
