@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "PatientInfoForm";
+}
+
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+    <body>
+       <h2> Enter a patient by indicator </h2>
+
+
+        <form method="post">
+            <input type="text" name="patientQuery" />
+            <input type="submit" value="Click to submit"/>
+            <hr />
+        </form>
+        <p> @ViewBag.patientQuery</p>
+    </body>
+
+
+</html>
+
