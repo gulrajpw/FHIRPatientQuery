@@ -42,7 +42,7 @@ namespace PatientQueryFHIR.Models
             {
                foreach (Patient p in returnedPatients)
                 {
-                    String displayPatient = p.Name.First() + " "+ p.Name.Last();
+                    String displayPatient = "Firstname: " + p.Name.First() + "| Lastname:" + p.Name.Last() + " | Patient DOB: " + p.BirthDate;
                     displayPatients.Add(displayPatient);
                 }
                
