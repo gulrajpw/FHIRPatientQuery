@@ -31,13 +31,11 @@ namespace PatientQueryFHIR.Models
                 returnedPatients.Add(p);
               }
            }
-           
         }
 
         internal List<String> ReturnPatients()
         {
-            List<String> displayPatients = new List<String>(); //Push just what we need to the ViewBag instead of the entire Patient model.
-
+            List<String> displayPatients = new List<String>(); //Add just what we need to the ViewBag instead of the entire Patient model.
             if (returnedPatients != null)
             {
                foreach (Patient p in returnedPatients)

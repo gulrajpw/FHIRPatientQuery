@@ -8,6 +8,7 @@
 <script src="~/Scripts/bootstrap.js"></script>
 <script src="~/Scripts/jquery-1.10.2.js"></script>
 
+
 <!DOCTYPE html>
 
 <html>
@@ -15,25 +16,18 @@
 </head>
     <body>
        <h2> Enter a patient by indicator </h2>
-
-
+        <i>Ex: "John", or "John Doe"</i>
         <form method="post">
             <input type="text" name="patientQuery" />
-            <input type="submit" value="Click to submit"/>
+            <input type="submit" class="btn-success" value="Click to submit"/>
             <hr />
         </form>
-        
-     
-   
     </body>
-
-
 </html>
 
-@{
+@{      
     foreach (var person in ViewBag.ReturnedResults)
     {
         <li>@person</li>
     }
-
 }
