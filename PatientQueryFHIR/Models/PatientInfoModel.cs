@@ -19,7 +19,8 @@ namespace PatientQueryFHIR.Models
             
             if (userQuery != null)
             {
-             var endpoint = new Uri("http://spark.furore.com/fhir");
+             // var endpoint = new Uri("http://spark.furore.com/fhir");
+             var endpoint = new Uri("http://spark-dstu2.furore.com/fhir");
              var client = new FhirClient(endpoint);
              var query = new string[] { "name=" + userQuery };
              var bundle = client.Search("Patient", query);
