@@ -47,7 +47,7 @@ namespace PatientQueryFHIR.Models
                
             }
             
-            return displayPatients;
+            return displayPatients; //TODO: implement an error message for empty queries. Look for using another endpoint with more data.
         }
 
 
