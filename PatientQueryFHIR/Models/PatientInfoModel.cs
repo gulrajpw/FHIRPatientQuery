@@ -37,7 +37,7 @@ namespace PatientQueryFHIR.Models
         internal List<String> ReturnPatients()
         {
             List<String> displayPatients = new List<String>(); //Add just what we need to the ViewBag instead of the entire Patient model.
-            if (returnedPatients != null)
+            if (returnedPatients.Count > 0)
             {
                foreach (Patient p in returnedPatients)
                 {
@@ -46,8 +46,14 @@ namespace PatientQueryFHIR.Models
                 }
                
             }
-            
-            return displayPatients; //TODO: implement an error message for empty queries. Look for using another endpoint with more data.
+            else
+            {
+                string error = "Search contains no current results";
+                displayPatients.Add(error);
+
+            }
+
+            return displayPatients; 
         }
 
 

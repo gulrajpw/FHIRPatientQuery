@@ -18,9 +18,12 @@ namespace PatientQueryFHIR.Controllers
         {
             
             PatientInfoModel patientVM = new PatientInfoModel();
-            patientVM.FetchQueryResults(patientQuery);
-            ViewBag.PatientQuery = patientQuery;
-            ViewBag.ReturnedResults = patientVM.ReturnPatients();
+            if (patientQuery != null)
+            {
+                patientVM.FetchQueryResults(patientQuery);
+
+            }
+                ViewBag.ReturnedResults = patientVM.ReturnPatients();
 
             return View();
         }
