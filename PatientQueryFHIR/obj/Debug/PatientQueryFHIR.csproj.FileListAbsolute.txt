@@ -99,3 +99,4 @@ C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Support.xml
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.FhirPath.xml
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Newtonsoft.Json.xml
+C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.csproj.CoreCompileInputs.cache
