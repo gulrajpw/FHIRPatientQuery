@@ -31,7 +31,7 @@ namespace PatientQueryFHIR.Controllers
             else
             {
                 List<string> errorMessage = new List<string>();
-                string endpointDownMsg = "FHIR endpoint is down";
+                string endpointDownMsg = "FHIR endpoint is down. We apologize for the inconvience";
                 errorMessage.Add(endpointDownMsg);
                 ViewBag.ReturnedResults = errorMessage; //Re use the existing returned results field to raise error message.
             }
