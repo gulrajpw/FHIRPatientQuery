@@ -14,10 +14,11 @@ namespace PatientQueryFHIR.Controllers
         {
             return View();
         }
+
         public ActionResult PatientInfoForm(string patientQuery)
         {
-            bool canSearch = isHostAvailable();
-            if (canSearch)
+           
+            if (isHostAvailable())
             {
                 PatientInfoModel patientVM = new PatientInfoModel();
 
@@ -44,7 +45,8 @@ namespace PatientQueryFHIR.Controllers
             try
             {
                 var ping = new System.Net.NetworkInformation.Ping();
-                var result = ping.Send("http://spark-dstu2.furore.com/fhir");
+                // var result = ping.Send("http://spark-dstu2.furore.com/fhir");
+                var result = ping.Send("http://spark.furore.com/fhir");
                 return (result.Status != System.Net.NetworkInformation.IPStatus.Success) ? false : true;
             }
             catch (Exception)

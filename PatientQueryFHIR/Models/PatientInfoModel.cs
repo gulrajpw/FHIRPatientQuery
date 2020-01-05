@@ -11,22 +11,20 @@ namespace PatientQueryFHIR.Models
     public class PatientInfoModel
     {
         List<Patient> returnedPatients = new List<Patient>();
-        int recordsCount;
-        string FHIRendpoint = "http://spark-dstu2.furore.com/fhir"; //http://spark.furore.com/fhir
-
-      
+        
         internal void FetchQueryResults(string userQuery)
         {
             //Hit the endpoint URL and fill into ViewBag when done. 
             
-                if (userQuery != null)
+                if (!String.IsNullOrEmpty(userQuery))
                 {
-                    var endpoint = new Uri(FHIRendpoint);
-                    var client = new FhirClient(endpoint);
-                    var query = new string[] { "name=" + userQuery };
-                    var bundle = client.Search("Patient", query);
+                  var fhirEndpoint = new FhirClient("http://spark.furore.com/fhir");
+                //var client = new FhirClient("http://spark-dstu2.furore.com/fhir");
+                var query = new SearchParams().Where("name=" + userQuery);
 
-                    recordsCount = bundle.Entry.Count();
+                
+                var bundle = fhirEndpoint.Search<Patient>(query);
+
                     foreach (var entry in bundle.Entry)
                     {
                         Patient p = (Patient)entry.Resource;

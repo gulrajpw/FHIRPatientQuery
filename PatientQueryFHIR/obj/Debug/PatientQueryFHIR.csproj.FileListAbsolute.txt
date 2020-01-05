@@ -101,3 +101,10 @@ C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\bin\Newtonso
 C:\Users\Patrick\Documents\GitHub\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.csproj.CoreCompileInputs.cache
 C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.csprojAssemblyReference.cache
 C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\obj\Debug\PatientQueryFHIR.csproj.CopyComplete
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.ElementModel.dll
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Serialization.dll
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Support.Poco.dll
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.ElementModel.xml
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Serialization.xml
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\Hl7.Fhir.Support.Poco.xml
+C:\Users\Patrick\Documents\Github\FHIRPatientQuery\PatientQueryFHIR\bin\System.ValueTuple.xml
