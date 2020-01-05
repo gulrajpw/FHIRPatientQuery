@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using Hl7.Fhir;
 using Hl7.Fhir.Rest;
 using Hl7.Fhir.Model;
 
@@ -10,7 +8,7 @@ namespace PatientQueryFHIR.Models
 {
     public class PatientInfoModel
     {
-        List<Patient> returnedPatients = new List<Patient>();
+       public List<Patient> returnedPatients = new List<Patient>();
         
         internal void FetchQueryResults(string userQuery)
         {
@@ -18,9 +16,10 @@ namespace PatientQueryFHIR.Models
             
                 if (!String.IsNullOrEmpty(userQuery))
                 {
-                  var fhirEndpoint = new FhirClient("http://spark.furore.com/fhir");
+                  var fhirEndpoint = new FhirClient("http://test.fhir.org/r2");
                 //var client = new FhirClient("http://spark-dstu2.furore.com/fhir");
-                var query = new SearchParams().Where("name=" + userQuery);
+                string completeQuery = "name=" + userQuery;
+                var query = new SearchParams().Where(completeQuery);
 
                 
                 var bundle = fhirEndpoint.Search<Patient>(query);
@@ -33,14 +32,14 @@ namespace PatientQueryFHIR.Models
                 }   
         }
 
-        internal List<String> ReturnPatients()
+        internal List<String> FormatResultsToUser()
         {
             List<String> displayPatients = new List<String>(); //Add just what we need to the ViewBag instead of the entire Patient model.
             if (returnedPatients.Count > 0)
             {
                foreach (Patient p in returnedPatients)
                 {
-                    String displayPatient = "Firstname: " + p.Name.First() + "| Lastname:" + p.Name.Last() + " | Patient DOB: " + p.BirthDate;
+                    String displayPatient = "Patient ID: " + p.Id + "\r\n | Firstname: " + p.Name.First() + " | Lastname: " + p.Name.Last() + " | Patient DOB: " + p.BirthDate;
                     displayPatients.Add(displayPatient);
                 }
                
