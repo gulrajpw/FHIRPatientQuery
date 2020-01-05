@@ -19,7 +19,6 @@ namespace PatientQueryFHIR.Controllers
                 ViewBag.ReturnedResults = patientVM.FormatResultsToUser();
          
           
-
             return View();
         }
 

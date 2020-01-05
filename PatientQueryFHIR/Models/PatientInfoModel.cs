@@ -53,11 +53,6 @@ namespace PatientQueryFHIR.Models
 
             return displayPatients; 
         }
-
-
-
-
-
-
+        
     }
 }
