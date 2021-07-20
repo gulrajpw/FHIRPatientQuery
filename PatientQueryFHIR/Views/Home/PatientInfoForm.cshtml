@@ -1,6 +1,4 @@
-﻿<script src="https://kendo.cdn.telerik.com/2021.2.616/js/jquery.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
-
+﻿
 @{
     ViewBag.Title = "PatientInfoForm";
 }
@@ -13,11 +11,11 @@
 </head>
 <body>
 
-    <h2> Enter a patient's first name </h2>
+    <h2>Enter Patient's First Name</h2>
     <i>Ex: "John", or "Rob"</i>
-    <form method="post">
-        <input type="text" name="patientQuery" />
-        <input type="submit" class="k-button" value="Click to submit" />
+    <form method="post" style="display: inline-flex">
+        <input type="text" class="form-control form-control-lg" name="patientQuery" />
+        <input type="submit" class="btn btn-primary" style="height: 34px; margin-left: 10px;" value="Click to submit" />
         <hr />
     </form>
 
@@ -25,12 +23,12 @@
         @{
             foreach (var person in ViewBag.ReturnedResults)
             {
-                <li>@person</li>
+            <li>@person</li>
             }
         }
     </div>
 
-    <button id="exportData" class="k-button" onclick="downloadResults()"> Download results to file</button>
+    <button id="exportData" style="margin-top: 20px" class="btn btn-primary" onclick="downloadResults()"> Download results to file</button>
 </body>
 </html>
 
