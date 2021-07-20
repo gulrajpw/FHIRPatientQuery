@@ -8,16 +8,22 @@ namespace PatientQueryFHIR.Models
 {
     public class PatientInfoModel
     {
-       public List<Patient> returnedPatients = new List<Patient>();
+       private List<Patient> returnedPatients = new List<Patient>();
+       
+       private string _userQuery { get; set; }
+
+
+
         
         internal void FetchQueryResults(string userQuery)
         {
             //Hit the endpoint URL and fill into ViewBag when done. 
-            
                 if (!String.IsNullOrEmpty(userQuery))
                 {
-                  var fhirEndpoint = new FhirClient("http://test.fhir.org/r2");
-                //var client = new FhirClient("http://spark-dstu2.furore.com/fhir");
+                _userQuery = userQuery;
+                  var fhirEndpoint = new FhirClient("http://hapi.fhir.org/baseDstu2");
+               // var fhirEndpoint = new FhirClient("http://spark-dstu2.furore.com/fhir");
+
                 string completeQuery = "name=" + userQuery;
                 var query = new SearchParams().Where(completeQuery);
 
@@ -46,9 +52,11 @@ namespace PatientQueryFHIR.Models
             }
             else
             {
-                string error = "Search contains no current results";
-                displayPatients.Add(error);
-
+                if (!string.IsNullOrEmpty(_userQuery))
+                {
+                    string error = "Search contains no current results";
+                    displayPatients.Add(error);
+                }
             }
 
             return displayPatients; 
